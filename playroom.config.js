@@ -15,7 +15,7 @@ module.exports = {
       Hello World
     </Heading>
   `,
-  baseUrl: '/',
+  // baseUrl: '/',
   webpackConfig: () => ({
     module: {
       rules: [
