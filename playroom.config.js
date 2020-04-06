@@ -12,7 +12,7 @@ module.exports = {
   openBrowser: true,
   exampleCode: `
     <Heading>
-      Hello World!
+      Hello World
     </Heading>
   `,
   baseUrl: '/playroom/',
