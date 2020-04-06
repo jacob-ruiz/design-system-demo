@@ -18,6 +18,7 @@ const trimWhitespace = {
 
 const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  sizes: [0, 4, 8, 16, 32, 36, 64, 128, 256, 512],
   fonts: {
     body:
       '"Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
@@ -28,7 +29,7 @@ const theme = {
   fontWeights: {
     body: 400,
     heading: 600,
-    bold: 700,
+    bold: 500,
   },
   lineHeights: {
     body: 1.5,
@@ -37,13 +38,21 @@ const theme = {
   colors: {
     text: '#000',
     background: '#fff',
-    primary: '#0060FF',
-    secondary: '#30c',
+    primary: '#3C64FA',
+    secondary: '#00EBA8',
     muted: '#f6f6f6',
+    blue: {
+      1: '#E5F4FF',
+      2: '#C3E6FF',
+      3: '#84CBFF',
+      4: '#3C64FA',
+      5: '#001071',
+    },
   },
+  radii: [0, 4, 8, '50%'],
   styles: {
     root: {
-      fontFamily: 'body',
+      fontFamily: '"Poppins"',
       lineHeight: 'body',
       fontWeight: 'body',
     },
@@ -128,6 +137,15 @@ const theme = {
   },
 
   // Variants
+  buttons: {
+    primary: {
+      bg: 'primary',
+    },
+    secondary: {
+      bg: 'blue.1',
+      color: 'primary',
+    },
+  },
   display: {
     1: {
       fontSize: 8,
@@ -169,4 +187,18 @@ const theme = {
   },
 };
 
+const components = {
+  Button: {
+    borderRadius: 1,
+    fontSize: 2,
+    fontWeight: 'bold',
+    height: 5,
+    minWidth: '100px',
+    fontFamily: 'body',
+  },
+};
+
+theme.components = components;
+
+export { components };
 export default theme;
