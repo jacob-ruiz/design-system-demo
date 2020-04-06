@@ -3,7 +3,7 @@ module.exports = {
   outputPath: './dist/playroom',
 
   // Optional:
-  title: 'Qordoba',
+  title: 'Design System Demo',
   // themes: './themes',
   snippets: './playroom/snippets.js',
   frameComponent: './playroom/FrameComponent.js',
