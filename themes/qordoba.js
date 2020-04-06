@@ -12,8 +12,8 @@ const trimWhitespace = {
     opacity: 0,
     height: 0,
     width: '100%',
-    marginBottom: `${calcMarginTop(1.1)}`
-  }
+    marginBottom: `${calcMarginTop(1.1)}`,
+  },
 };
 
 const theme = {
@@ -22,151 +22,151 @@ const theme = {
     body:
       '"Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: 'inherit',
-    monospace: 'Menlo, monospace'
+    monospace: 'Menlo, monospace',
   },
   fontSizes: [10, 12, 13, 18, 30, 40, 48, 64, 96],
   fontWeights: {
     body: 400,
     heading: 600,
-    bold: 700
+    bold: 700,
   },
   lineHeights: {
     body: 1.5,
-    heading: 1.1
+    heading: 1.1,
   },
   colors: {
     text: '#000',
     background: '#fff',
     primary: '#0060FF',
     secondary: '#30c',
-    muted: '#f6f6f6'
+    muted: '#f6f6f6',
   },
   styles: {
     root: {
       fontFamily: 'body',
       lineHeight: 'body',
-      fontWeight: 'body'
+      fontWeight: 'body',
     },
     h1: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 5
+      fontSize: 5,
     },
     h2: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 4
+      fontSize: 4,
     },
     h3: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 3
+      fontSize: 3,
     },
     h4: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 2
+      fontSize: 2,
     },
     h5: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 1
+      fontSize: 1,
     },
     h6: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 0
+      fontSize: 0,
     },
     p: {
       color: 'text',
       fontFamily: 'body',
       fontWeight: 'body',
-      lineHeight: 'body'
+      lineHeight: 'body',
     },
     a: {
-      color: 'primary'
+      color: 'primary',
     },
     pre: {
       fontFamily: 'monospace',
       overflowX: 'auto',
       code: {
-        color: 'inherit'
-      }
+        color: 'inherit',
+      },
     },
     code: {
       fontFamily: 'monospace',
-      fontSize: 'inherit'
+      fontSize: 'inherit',
     },
     table: {
       width: '100%',
       borderCollapse: 'separate',
-      borderSpacing: 0
+      borderSpacing: 0,
     },
     th: {
       textAlign: 'left',
-      borderBottomStyle: 'solid'
+      borderBottomStyle: 'solid',
     },
     td: {
       textAlign: 'left',
-      borderBottomStyle: 'solid'
+      borderBottomStyle: 'solid',
     },
     img: {
-      maxWidth: '100%'
-    }
+      maxWidth: '100%',
+    },
   },
 
   // Variants
   display: {
     1: {
       fontSize: 8,
-      ...trimWhitespace
+      ...trimWhitespace,
     },
     2: {
       fontSize: 7,
-      ...trimWhitespace
+      ...trimWhitespace,
     },
     3: {
       fontSize: 6,
-      ...trimWhitespace
-    }
+      ...trimWhitespace,
+    },
   },
   heading: {
     1: {
       fontSize: 5,
-      ...trimWhitespace
+      ...trimWhitespace,
     },
     2: {
       fontSize: 4,
-      ...trimWhitespace
+      ...trimWhitespace,
     },
     3: {
       fontSize: 3,
-      ...trimWhitespace
+      ...trimWhitespace,
     },
     4: {
       fontSize: 2,
-      ...trimWhitespace
+      ...trimWhitespace,
     },
     5: {
       fontSize: 0,
       letterSpacing: 1.3,
       fontWeight: 700,
       textTransform: 'uppercase',
-      ...trimWhitespace
-    }
-  }
+      ...trimWhitespace,
+    },
+  },
 };
 
 export default theme;
