@@ -187,17 +187,6 @@ const theme = {
   },
 };
 
-const components = {
-  Button: {
-    borderRadius: 1,
-    fontSize: 2,
-    fontWeight: 'bold',
-    height: 5,
-    minWidth: '100px',
-    fontFamily: 'body',
-  },
-};
-
 theme.components = components;
 
 export { components };

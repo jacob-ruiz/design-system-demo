@@ -2,12 +2,10 @@
 import { jsx } from 'theme-ui';
 import { Button as Element } from 'theme-ui';
 import PropTypes from 'prop-types';
-import { components } from '../../themes/qordoba';
-import { useThemeUI } from 'theme-ui';
+import styles from './styles';
 
 const Button = (props) => {
-  const { theme } = useThemeUI();
-  return <Element sx={theme.components.Button} {...props} />;
+  return <Element sx={styles} {...props} />;
 };
 
 export default Button;
@@ -18,13 +16,4 @@ Button.propTypes = {
 
 Button.defaultProps = {
   variant: 'primary',
-};
-
-const styles = {
-  borderRadius: 1,
-  fontSize: 2,
-  fontWeight: 'bold',
-  height: 5,
-  minWidth: '100px',
-  fontFamily: 'body',
 };
