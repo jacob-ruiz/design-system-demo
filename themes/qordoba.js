@@ -46,6 +46,13 @@ const theme = {
     secondary: '#00EBA8',
     muted: '#f6f6f6',
     transparent: 'transparent',
+    grey: {
+      1: '#EFF0F2',
+      2: '#9AA2AF',
+      3: '#5A677C',
+      4: '#233551',
+      5: '##001435',
+    },
     blue: {
       1: '#E5F4FF',
       2: '#C3E6FF',
@@ -144,6 +151,10 @@ const theme = {
     },
     img: {
       maxWidth: '100%',
+    },
+    hr: {
+      color: 'grey.1',
+      margin: 0,
     },
   },
 
