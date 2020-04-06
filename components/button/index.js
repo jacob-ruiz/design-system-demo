@@ -11,7 +11,15 @@ const Button = (props) => {
 export default Button;
 
 Button.propTypes = {
-  variant: PropTypes.oneOf(['primary', 'secondary']),
+  variant: PropTypes.oneOf([
+    'primary',
+    'alt1',
+    'alt2',
+    'alt3',
+    'destructive.primary',
+    'destructive.secondary',
+  ]),
+  disabled: PropTypes.bool,
 };
 
 Button.defaultProps = {

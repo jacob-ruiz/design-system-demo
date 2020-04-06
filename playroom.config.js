@@ -5,7 +5,7 @@ module.exports = {
   // Optional:
   title: 'Qordoba',
   // themes: './themes',
-  // snippets: './playroom/snippets.js',
+  snippets: './playroom/snippets.js',
   frameComponent: './playroom/FrameComponent.js',
   widths: [1024],
   port: 9000,
@@ -28,13 +28,13 @@ module.exports = {
               options: {
                 presets: [
                   ['@babel/preset-env', { modules: false }],
-                  '@babel/preset-react'
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    }
-  })
+                  '@babel/preset-react',
+                ],
+              },
+            },
+          ],
+        },
+      ],
+    },
+  }),
 };
