@@ -1,11 +1,11 @@
 const calcMarginTop = (lineHeight) => {
-  const capitalHeight = 0.3;
+  const capitalHeight = 0.35;
   const toTrim = (lineHeight - capitalHeight) * -0.5;
   return `${toTrim}em`;
 };
 
 const trimWhitespace = {
-  transform: `translateY(0.25em)`,
+  transform: `translateY(0.2em)`,
   '::before': {
     content: `''`,
     display: 'block',
@@ -289,7 +289,7 @@ const theme = {
     5: {
       fontSize: 0,
       letterSpacing: 1.3,
-      fontWeight: 700,
+      fontWeight: 600,
       textTransform: 'uppercase',
       ...trimWhitespace,
     },
