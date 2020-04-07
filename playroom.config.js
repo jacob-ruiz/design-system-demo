@@ -11,9 +11,15 @@ module.exports = {
   port: 9000,
   openBrowser: true,
   exampleCode: `
-    <Heading>
-      Hello World
-    </Heading>
+    <Box padding="3">
+      <Stack space="3">
+        <Heading variant="heading.1">Heading 1</Heading>
+        <Heading variant="heading.2">Heading 2</Heading>
+        <Heading variant="heading.3">Heading 3</Heading>
+        <Heading variant="heading.4">Heading 4</Heading>
+        <Heading variant="heading.5">Heading 5</Heading>
+      </Stack>
+    </Box>
   `,
   //
   // baseUrl: '/playroom/',
