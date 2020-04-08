@@ -7,7 +7,7 @@ module.exports = {
   // themes: './themes',
   snippets: './playroom/snippets.js',
   frameComponent: './playroom/FrameComponent.js',
-  widths: [1024],
+  widths: [320, 768, 1024],
   port: 9000,
   openBrowser: true,
   exampleCode: `

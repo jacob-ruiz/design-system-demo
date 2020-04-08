@@ -37,6 +37,9 @@ const theme = {
     heading: 1.1,
   },
   borderWidths: [0, 1, 2],
+  shadows: {
+    input: '0px 0px 18px rgba(191, 203, 255, 0.38)',
+  },
   colors: {
     white: '#fff',
     black: '#000',
@@ -59,6 +62,13 @@ const theme = {
       3: '#84CBFF',
       4: '#3C64FA',
       5: '#001071',
+    },
+    green: {
+      1: '#E2FDF5',
+      2: '#A9F9E1',
+      3: '#00EBA8',
+      4: '#00CA8E',
+      5: '#045758',
     },
     orange: {
       1: '#FFF4F1',
@@ -159,6 +169,52 @@ const theme = {
   },
 
   // Variants
+  forms: {
+    input: {
+      // Base styles
+      fontFamily: 'body',
+      fontSize: 1,
+      height: 5,
+      borderRadius: 1,
+      transition: '100ms',
+      outline: 'none',
+      '::placeholder': {
+        color: 'grey.2',
+      },
+      // Empty, not focused
+      ':placeholder-shown:not(:focus)': {
+        bg: 'grey.1',
+      },
+      // Focused
+      ':focus': {
+        borderColor: 'green.2',
+        bg: 'white',
+        boxShadow: 'input',
+      },
+      // Invalid
+      '&[aria-invalid]': {
+        borderColor: 'orange.2',
+        bg: 'white',
+        boxShadow: '0px 0px 18px rgba(255, 100, 60, 0.1)',
+      },
+      // Invalid, not focused (forcing these styles over "Empty, not focused")
+      '&[aria-invalid]:not(:focus)': {
+        borderColor: 'orange.2',
+        bg: 'white',
+        boxShadow: '0px 0px 18px rgba(255, 100, 60, 0.1)',
+      },
+      // Disabled
+      ':disabled': {
+        borderColor: 'grey.1',
+        color: 'grey.3',
+        cursor: 'not-allowed',
+      },
+      // Filled and not focused
+      bg: 'white',
+      borderStyle: '1px solid',
+      borderColor: 'grey.1',
+    },
+  },
   buttons: {
     primary: {
       bg: 'primary',

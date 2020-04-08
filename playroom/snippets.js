@@ -77,4 +77,33 @@ export default [
       <Heading variant="heading.5">Heading 5</Heading>
     `,
   },
+  // Input
+  {
+    group: 'Input',
+    name: 'Text Input',
+    code: `
+      <Input type="text" placeholder="Text input" />
+    `,
+  },
+  {
+    group: 'Input',
+    name: 'Email Input',
+    code: `
+      <Input type="email" placeholder="Email" />
+    `,
+  },
+  {
+    group: 'Input',
+    name: 'Password Input',
+    code: `
+      <Input type="password" placeholder="Password" />
+    `,
+  },
+  {
+    group: 'Input',
+    name: 'Text Input (Invalid)',
+    code: `
+      <Input type="text" placeholder="Text input" invalid />
+    `,
+  },
 ];
