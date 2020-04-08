@@ -1,3 +1,5 @@
+import cropText from '../util/cropText';
+
 const calcMarginTop = (lineHeight) => {
   const capitalHeight = 0.35;
   const toTrim = (lineHeight - capitalHeight) * -0.5;
@@ -30,7 +32,8 @@ const theme = {
   fontWeights: {
     body: 400,
     heading: 600,
-    bold: 500,
+    medium: 500,
+    bold: 600,
   },
   lineHeights: {
     body: 1.5,
@@ -83,6 +86,7 @@ const theme = {
       fontFamily: '"Poppins"',
       lineHeight: 'body',
       fontWeight: 'body',
+      fontSize: 2,
     },
     h1: {
       color: 'text',
@@ -350,6 +354,45 @@ const theme = {
       ...trimWhitespace,
     },
   },
+  text: {
+    default: {
+      color: 'black',
+      ...cropText({
+        lineHeight: 1.5,
+        capitalHeight: 0.35,
+        baseline: 0.2,
+      }),
+    },
+    subtle: {
+      color: 'grey.3',
+      ...cropText({
+        lineHeight: 1.5,
+        capitalHeight: 0.35,
+        baseline: 0.2,
+      }),
+    },
+    danger: {
+      color: 'orange.4',
+      ...cropText({
+        lineHeight: 1.5,
+        capitalHeight: 0.35,
+        baseline: 0.2,
+      }),
+    },
+    success: {
+      color: 'green.4',
+      ...cropText({
+        lineHeight: 1.5,
+        capitalHeight: 0.35,
+        baseline: 0.2,
+      }),
+    },
+  },
 };
+
+// Aliases
+theme.fontSizes.small = theme.fontSizes[0];
+theme.fontSizes.default = theme.fontSizes[1];
+theme.fontSizes.large = '13px';
 
 export default theme;
