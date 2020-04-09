@@ -174,6 +174,10 @@ const theme = {
 
   // Variants
   forms: {
+    checkbox: {
+      cursor: 'pointer',
+      color: 'grey.3',
+    },
     label: {
       fontWeight: 'bold',
     },
