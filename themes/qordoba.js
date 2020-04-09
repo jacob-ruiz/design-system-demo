@@ -357,34 +357,35 @@ const theme = {
   text: {
     default: {
       color: 'black',
+      lineHeight: 1.5,
       ...cropText({
         lineHeight: 1.5,
-        capitalHeight: 0.35,
-        baseline: 0.2,
+        capitalHeight: 0.15,
+        baseline: 0.3,
       }),
     },
     subtle: {
       color: 'grey.3',
       ...cropText({
         lineHeight: 1.5,
-        capitalHeight: 0.35,
-        baseline: 0.2,
+        capitalHeight: 0.15,
+        baseline: 0.3,
       }),
     },
     danger: {
       color: 'orange.4',
       ...cropText({
         lineHeight: 1.5,
-        capitalHeight: 0.35,
-        baseline: 0.2,
+        capitalHeight: 0.15,
+        baseline: 0.3,
       }),
     },
     success: {
       color: 'green.4',
       ...cropText({
         lineHeight: 1.5,
-        capitalHeight: 0.35,
-        baseline: 0.2,
+        capitalHeight: 0.15,
+        baseline: 0.3,
       }),
     },
   },
