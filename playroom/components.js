@@ -7,3 +7,4 @@ export { default as Input } from '../components/input';
 export { default as Text } from '../components/text';
 export { default as Label } from '../components/label';
 export { default as Field } from '../components/field';
+export { default as Form } from '../components/form';
