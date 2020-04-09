@@ -5,3 +5,4 @@ export { default as Box } from '../components/box';
 export { default as Stack } from '../components/stack';
 export { default as Input } from '../components/input';
 export { default as Text } from '../components/text';
+export { default as Label } from '../components/label';

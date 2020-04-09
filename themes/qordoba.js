@@ -174,6 +174,9 @@ const theme = {
 
   // Variants
   forms: {
+    label: {
+      fontWeight: 'bold',
+    },
     input: {
       // Base styles
       fontFamily: 'body',
