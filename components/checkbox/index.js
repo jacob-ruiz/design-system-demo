@@ -21,6 +21,7 @@ const Checkbox = ({ label, weight, ...props }) => {
 };
 
 Checkbox.propTypes = {
+  label: PropTypes.string,
   defaultChecked: PropTypes.bool,
   weight: PropTypes.string,
 };

@@ -174,6 +174,14 @@ const theme = {
 
   // Variants
   forms: {
+    select: {
+      bg: 'grey.1',
+      outline: 'none',
+      border: 'none',
+      fontWeight: 'bold',
+      height: '36px',
+      cursor: 'pointer',
+    },
     checkbox: {
       cursor: 'pointer',
       color: 'grey.3',

@@ -106,4 +106,30 @@ export default [
       <Input type="text" placeholder="Text input" invalid />
     `,
   },
+  // Forms
+  {
+    group: 'Form',
+    name: 'Select',
+    code: `
+      <Select label="Label">
+        <option>Option A</option>
+        <option>Option B</option>
+        <option>Option C</option>
+      </Select>
+    `,
+  },
+  {
+    group: 'Form',
+    name: 'Checkbox',
+    code: `
+      <Checkbox label="Checkbox" />
+    `,
+  },
+  {
+    group: 'Form',
+    name: 'Field',
+    code: `
+      <Field label="Label" placeholder="Placeholder" />
+    `,
+  },
 ];
