@@ -1,11 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Box as Element } from 'theme-ui';
+import { Box } from 'theme-ui';
 import PropTypes from 'prop-types';
-
-const Box = (props) => {
-  return <Element {...props} />;
-};
 
 export default Box;
 

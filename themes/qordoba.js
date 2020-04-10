@@ -28,7 +28,19 @@ const theme = {
     heading: 'inherit',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [10, 12, 13, 18, 30, 40, 48, 64, 96],
+  // fontSizes: [10, 12, 13, 18, 30, 40, 48, 64, 96],
+  fontSizes: {
+    0: 10,
+    1: 12,
+    2: 13,
+    3: 18,
+    4: 30,
+    5: 48,
+    6: 64,
+    7: 96,
+    // aliases
+    large: 19,
+  },
   fontWeights: {
     body: 400,
     heading: 600,
@@ -38,6 +50,9 @@ const theme = {
   lineHeights: {
     body: 1.5,
     heading: 1.1,
+  },
+  borders: {
+    'grey.1': '1px solid red',
   },
   borderWidths: [0, 1, 2],
   shadows: {
@@ -57,7 +72,7 @@ const theme = {
       2: '#9AA2AF',
       3: '#5A677C',
       4: '#233551',
-      5: '##001435',
+      5: '#001435',
     },
     blue: {
       1: '#E5F4FF',
