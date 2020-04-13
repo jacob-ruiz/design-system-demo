@@ -11,3 +11,6 @@ export { default as Form } from '../components/form';
 export { default as Checkbox } from '../components/checkbox';
 export { default as Select } from '../components/select';
 export { default as Inline } from '../components/inline';
+
+// Molecules
+export { default as Tag } from '../molecules/tag';

@@ -35,7 +35,7 @@ const Inline = ({ space, justify, alignY, children }) => {
 };
 
 Inline.propTypes = {
-  space: PropTypes.number,
+  space: PropTypes.oneOf(['1', '2', '3', '4', '5', '6']),
   justify: PropTypes.oneOf(['left', 'center', 'right']),
   alignY: PropTypes.oneOf(['center', 'top', 'bottom']),
   children: PropTypes.node,

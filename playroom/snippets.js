@@ -132,4 +132,18 @@ export default [
       <Field label="Label" placeholder="Placeholder" />
     `,
   },
+  {
+    group: 'Tag',
+    name: 'Standard',
+    code: `
+      <Tag>Tag</Tag>
+    `,
+  },
+  {
+    group: 'Tag',
+    name: 'With Close',
+    code: `
+      <Tag close>Tag</Tag>
+    `,
+  },
 ];
