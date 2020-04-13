@@ -146,4 +146,15 @@ export default [
       <Tag close>Tag</Tag>
     `,
   },
+  {
+    group: 'Navigation',
+    name: 'Breadcrumb',
+    code: `
+      <Breadcrumb>
+        <Text>Home</Text>
+        <Text>Projects</Text>
+        <Text>File</Text>
+      </Breadcrumb>
+    `,
+  },
 ];

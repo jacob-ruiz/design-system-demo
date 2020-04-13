@@ -426,4 +426,18 @@ theme.fontSizes.small = theme.fontSizes[0];
 theme.fontSizes.default = theme.fontSizes[1];
 theme.fontSizes.large = '13px';
 
+// Components
+theme.components = {
+  BreadcrumbItem: {
+    fontSize: '14px',
+    cursor: 'pointer',
+    ':hover': {
+      textDecoration: 'underline',
+    },
+  },
+  BreadcrumbSeparator: {
+    color: 'grey.2',
+  },
+};
+
 export default theme;
