@@ -10,7 +10,7 @@ const Select = (props) => {
   return (
     <Box>
       {props.label ? <Label>{props.label}</Label> : null}
-      <Element {...props} />
+      <Element sx={{ padding: 2, fontFamily: 'default' }} {...props} />
     </Box>
   );
 };

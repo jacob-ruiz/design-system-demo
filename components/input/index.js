@@ -4,7 +4,9 @@ import { Input as Element } from 'theme-ui';
 import PropTypes from 'prop-types';
 
 const Input = (props) => {
-  return <Element aria-invalid={props.invalid} {...props} />;
+  return (
+    <Element aria-invalid={props.invalid} sx={{ padding: 2 }} {...props} />
+  );
 };
 
 Input.propTypes = {
