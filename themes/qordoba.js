@@ -1,6 +1,6 @@
 import cropText from '../util/cropText';
 
-const calcMarginTop = (lineHeight) => {
+const calcMarginTop = lineHeight => {
   const capitalHeight = 0.35;
   const toTrim = (lineHeight - capitalHeight) * -0.5;
   return `${toTrim}em`;
@@ -14,8 +14,8 @@ const trimWhitespace = {
     opacity: 0,
     height: 0,
     width: '100%',
-    marginBottom: `${calcMarginTop(1.1)}`,
-  },
+    marginBottom: `${calcMarginTop(1.1)}`
+  }
 };
 
 const theme = {
@@ -26,7 +26,7 @@ const theme = {
     body:
       '"Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: 'inherit',
-    monospace: 'Menlo, monospace',
+    monospace: 'Menlo, monospace'
   },
   // fontSizes: [10, 12, 13, 18, 30, 40, 48, 64, 96],
   fontSizes: {
@@ -39,24 +39,24 @@ const theme = {
     6: 64,
     7: 96,
     // aliases
-    large: 19,
+    large: 19
   },
   fontWeights: {
     body: 400,
     heading: 600,
     medium: 500,
-    bold: 600,
+    bold: 600
   },
   lineHeights: {
     body: 1.5,
-    heading: 1.1,
+    heading: 1.1
   },
   borders: {
-    'grey.1': '1px solid red',
+    'grey.1': '1px solid red'
   },
   borderWidths: [0, 1, 2],
   shadows: {
-    input: '0px 0px 18px rgba(191, 203, 255, 0.38)',
+    input: '0px 0px 18px rgba(191, 203, 255, 0.38)'
   },
   colors: {
     white: '#fff',
@@ -72,28 +72,28 @@ const theme = {
       2: '#9AA2AF',
       3: '#5A677C',
       4: '#233551',
-      5: '#001435',
+      5: '#001435'
     },
     blue: {
       1: '#E5F4FF',
       2: '#C3E6FF',
       3: '#84CBFF',
       4: '#3C64FA',
-      5: '#001071',
+      5: '#001071'
     },
     green: {
       1: '#E2FDF5',
       2: '#A9F9E1',
       3: '#00EBA8',
       4: '#00CA8E',
-      5: '#045758',
+      5: '#045758'
     },
     orange: {
       1: '#FFF4F1',
       2: '#FFD8CD',
       3: '#FF8866',
-      4: '#FF643C',
-    },
+      4: '#FF643C'
+    }
   },
   radii: [0, 4, 8, '50%'],
   styles: {
@@ -101,90 +101,90 @@ const theme = {
       fontFamily: '"Poppins"',
       lineHeight: 'body',
       fontWeight: 'body',
-      fontSize: 2,
+      fontSize: 2
     },
     h1: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 5,
+      fontSize: 5
     },
     h2: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 4,
+      fontSize: 4
     },
     h3: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 3,
+      fontSize: 3
     },
     h4: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 2,
+      fontSize: 2
     },
     h5: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 1,
+      fontSize: 1
     },
     h6: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 0,
+      fontSize: 0
     },
     p: {
       color: 'text',
       fontFamily: 'body',
       fontWeight: 'body',
-      lineHeight: 'body',
+      lineHeight: 'body'
     },
     a: {
-      color: 'primary',
+      color: 'primary'
     },
     pre: {
       fontFamily: 'monospace',
       overflowX: 'auto',
       code: {
-        color: 'inherit',
-      },
+        color: 'inherit'
+      }
     },
     code: {
       fontFamily: 'monospace',
-      fontSize: 'inherit',
+      fontSize: 'inherit'
     },
     table: {
       width: '100%',
       borderCollapse: 'separate',
-      borderSpacing: 0,
+      borderSpacing: 0
     },
     th: {
       textAlign: 'left',
-      borderBottomStyle: 'solid',
+      borderBottomStyle: 'solid'
     },
     td: {
       textAlign: 'left',
-      borderBottomStyle: 'solid',
+      borderBottomStyle: 'solid'
     },
     img: {
-      maxWidth: '100%',
+      maxWidth: '100%'
     },
     hr: {
       color: 'grey.1',
-      margin: 0,
-    },
+      margin: 0
+    }
   },
 
   // Variants
@@ -195,14 +195,14 @@ const theme = {
       border: 'none',
       fontWeight: 'bold',
       height: '36px',
-      cursor: 'pointer',
+      cursor: 'pointer'
     },
     checkbox: {
       cursor: 'pointer',
-      color: 'grey.3',
+      color: 'grey.3'
     },
     label: {
-      fontWeight: 'bold',
+      fontWeight: 'bold'
     },
     input: {
       // Base styles
@@ -213,41 +213,41 @@ const theme = {
       transition: '100ms',
       outline: 'none',
       '::placeholder': {
-        color: 'grey.2',
+        color: 'grey.2'
       },
       // Empty, not focused
       ':placeholder-shown:not(:focus)': {
-        bg: 'grey.1',
+        bg: 'grey.1'
       },
       // Focused
       ':focus': {
         borderColor: 'green.2',
         bg: 'white',
-        boxShadow: 'input',
+        boxShadow: 'input'
       },
       // Invalid
       '&[aria-invalid]': {
         borderColor: 'orange.2',
         bg: 'white',
-        boxShadow: '0px 0px 18px rgba(255, 100, 60, 0.1)',
+        boxShadow: '0px 0px 18px rgba(255, 100, 60, 0.1)'
       },
       // Invalid, not focused (forcing these styles over "Empty, not focused")
       '&[aria-invalid]:not(:focus)': {
         borderColor: 'orange.2',
         bg: 'white',
-        boxShadow: '0px 0px 18px rgba(255, 100, 60, 0.1)',
+        boxShadow: '0px 0px 18px rgba(255, 100, 60, 0.1)'
       },
       // Disabled
       ':disabled': {
         borderColor: 'grey.1',
         color: 'grey.3',
-        cursor: 'not-allowed',
+        cursor: 'not-allowed'
       },
       // Filled and not focused
       bg: 'white',
       borderStyle: '1px solid',
-      borderColor: 'grey.1',
-    },
+      borderColor: 'grey.1'
+    }
   },
   buttons: {
     primary: {
@@ -255,29 +255,29 @@ const theme = {
       color: 'white',
       // States
       ':hover': {
-        bg: '#4C70FA',
+        bg: '#4C70FA'
       },
       ':focus': {
-        bg: '#2E59FA',
+        bg: '#2E59FA'
       },
       ':disabled': {
-        background: '#C5D1FE',
-      },
+        background: '#C5D1FE'
+      }
     },
     alt1: {
       bg: 'blue.1',
       color: 'primary',
       // States
       ':hover': {
-        bg: '#C3E6FF',
+        bg: '#C3E6FF'
       },
       ':focus': {
-        bg: '#A1D8FF',
+        bg: '#A1D8FF'
       },
       ':disabled': {
         background: '#E5F4FF',
-        color: 'white',
-      },
+        color: 'white'
+      }
     },
     alt2: {
       bg: 'transparent',
@@ -288,31 +288,31 @@ const theme = {
       // States
       ':hover': {
         bg: '#C3E6FF',
-        border: '#C3E6FF',
+        border: '#C3E6FF'
       },
       ':focus': {
         bg: '#A1D8FF',
-        border: '#A1D8FF',
+        border: '#A1D8FF'
       },
       ':disabled': {
         background: '#E5F4FF',
         color: 'white',
-        border: '#E5F4FF',
-      },
+        border: '#E5F4FF'
+      }
     },
     alt3: {
       bg: 'white',
       color: 'primary',
       // States
       ':hover': {
-        color: '#6282FA',
+        color: '#6282FA'
       },
       ':focus': {
-        color: '#1F4DFC',
+        color: '#1F4DFC'
       },
       ':disabled': {
-        opacity: 0.5,
-      },
+        opacity: 0.5
+      }
     },
     destructive: {
       primary: {
@@ -320,69 +320,69 @@ const theme = {
         color: 'white',
         // States
         ':hover': {
-          bg: '#FF7552',
+          bg: '#FF7552'
         },
         ':focus': {
-          bg: '#FF5428',
+          bg: '#FF5428'
         },
         ':disabled': {
-          bg: '#FFD8CD',
-        },
+          bg: '#FFD8CD'
+        }
       },
       secondary: {
         bg: 'orange.2',
         color: 'orange.4',
         // States
         ':hover': {
-          bg: '#FEECE7',
+          bg: '#FEECE7'
         },
         ':focus': {
-          bg: '#FFCCBE',
+          bg: '#FFCCBE'
         },
         ':disabled': {
-          bg: '#FFD8CD',
-        },
-      },
-    },
+          bg: '#FFD8CD'
+        }
+      }
+    }
   },
   display: {
     1: {
       fontSize: 8,
-      ...trimWhitespace,
+      ...trimWhitespace
     },
     2: {
       fontSize: 7,
-      ...trimWhitespace,
+      ...trimWhitespace
     },
     3: {
       fontSize: 6,
-      ...trimWhitespace,
-    },
+      ...trimWhitespace
+    }
   },
   heading: {
     1: {
       fontSize: 5,
-      ...trimWhitespace,
+      ...trimWhitespace
     },
     2: {
       fontSize: 4,
-      ...trimWhitespace,
+      ...trimWhitespace
     },
     3: {
       fontSize: 3,
-      ...trimWhitespace,
+      ...trimWhitespace
     },
     4: {
       fontSize: 2,
-      ...trimWhitespace,
+      ...trimWhitespace
     },
     5: {
       fontSize: 0,
       letterSpacing: 1.3,
       fontWeight: 600,
       textTransform: 'uppercase',
-      ...trimWhitespace,
-    },
+      ...trimWhitespace
+    }
   },
   text: {
     default: {
@@ -391,39 +391,53 @@ const theme = {
       ...cropText({
         lineHeight: 1.5,
         capitalHeight: 0.15,
-        baseline: 0.3,
-      }),
+        baseline: 0.3
+      })
     },
     subtle: {
       color: 'grey.3',
       ...cropText({
         lineHeight: 1.5,
         capitalHeight: 0.15,
-        baseline: 0.3,
-      }),
+        baseline: 0.3
+      })
     },
     danger: {
       color: 'orange.4',
       ...cropText({
         lineHeight: 1.5,
         capitalHeight: 0.15,
-        baseline: 0.3,
-      }),
+        baseline: 0.3
+      })
     },
     success: {
       color: 'green.4',
       ...cropText({
         lineHeight: 1.5,
         capitalHeight: 0.15,
-        baseline: 0.3,
-      }),
-    },
-  },
+        baseline: 0.3
+      })
+    }
+  }
 };
 
 // Aliases
 theme.fontSizes.small = theme.fontSizes[0];
 theme.fontSizes.default = theme.fontSizes[1];
 theme.fontSizes.large = '13px';
+
+// Components
+theme.components = {
+  BreadcrumbItem: {
+    fontSize: '14px',
+    cursor: 'pointer',
+    ':hover': {
+      textDecoration: 'underline'
+    }
+  },
+  BreadcrumbSeparator: {
+    color: 'grey.2'
+  }
+};
 
 export default theme;
