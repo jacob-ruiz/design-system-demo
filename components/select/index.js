@@ -6,22 +6,22 @@ import PropTypes from 'prop-types';
 import Label from '../label';
 import Box from '../box';
 
-const Select = (props) => {
+const Select = props => {
   return (
     <Box>
       {props.label ? <Label>{props.label}</Label> : null}
-      <Element sx={{ padding: 2, fontFamily: 'default' }} {...props} />
+      <Element sx={{ padding: 2, fontFamily: 'body' }} {...props} />
     </Box>
   );
 };
 
 Select.propTypes = {
   label: PropTypes.string,
-  defaultValue: PropTypes.string,
+  defaultValue: PropTypes.string
 };
 
 Select.defaultProps = {
-  label: null,
+  label: null
 };
 
 export default Select;
