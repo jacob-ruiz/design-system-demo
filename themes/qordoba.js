@@ -95,7 +95,7 @@ const theme = {
       4: '#FF643C'
     }
   },
-  radii: [0, 4, 8, '50%'],
+  radii: [0, 4, 8, '999px'],
   styles: {
     root: {
       fontFamily: '"Poppins"',
