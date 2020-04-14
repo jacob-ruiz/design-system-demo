@@ -2,7 +2,6 @@
 import React from 'react';
 import { jsx, Flex } from 'theme-ui';
 import PropTypes from 'prop-types';
-import Box from '../../components/Box';
 import Text from '../../components/text';
 
 const Tag = ({ close, children }) => {
