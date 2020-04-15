@@ -1,4 +1,5 @@
 import Heading from '../components/heading';
+import Field from '../components/field';
 
 const Home = () => (
   <div>

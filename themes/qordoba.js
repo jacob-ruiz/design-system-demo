@@ -28,7 +28,6 @@ const theme = {
     heading: 'inherit',
     monospace: 'Menlo, monospace'
   },
-  // fontSizes: [10, 12, 13, 18, 30, 40, 48, 64, 96],
   fontSizes: {
     0: 10,
     1: 12,
