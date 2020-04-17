@@ -3,10 +3,8 @@ import { jsx } from 'theme-ui';
 import { Input as Element } from 'theme-ui';
 import PropTypes from 'prop-types';
 
-const Input = (props) => {
-  return (
-    <Element aria-invalid={props.invalid} sx={{ padding: 2 }} {...props} />
-  );
+const Input = props => {
+  return <Element aria-invalid={props.invalid} {...props} />;
 };
 
 Input.propTypes = {
@@ -14,7 +12,7 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   disabled: PropTypes.bool,
   invalid: PropTypes.bool,
-  defaultValue: PropTypes.string,
+  defaultValue: PropTypes.string
 };
 
 Input.defaultProps = {
@@ -23,7 +21,7 @@ Input.defaultProps = {
   defaultValue: null,
   // This is a hack that allows different styles for
   // "empty + unfocused" vs. "empty + focused"
-  placeholder: ` `,
+  placeholder: ` `
 };
 
 export default Input;

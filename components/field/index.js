@@ -5,9 +5,7 @@ import Input from '../input';
 import PropTypes from 'prop-types';
 
 const Field = props => {
-  return (
-    <Element aria-invalid={props.invalid} sx={{ padding: 2 }} {...props} />
-  );
+  return <Element aria-invalid={props.invalid} {...props} />;
 };
 
 Field.propTypes = {
