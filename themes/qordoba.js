@@ -51,7 +51,7 @@ const theme = {
     heading: 1.1
   },
   borders: {
-    'grey.1': '1px solid red'
+    grey: '1px solid red'
   },
   borderWidths: [0, 1, 2],
   shadows: {

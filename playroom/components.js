@@ -15,3 +15,6 @@ export { default as Inline } from '../components/inline';
 // Molecules
 export { default as Tag } from '../molecules/tag';
 export { default as Breadcrumb } from '../molecules/breadcrumb';
+
+// Qordoba
+export { default as TopNav } from '../qordoba/topnav';
