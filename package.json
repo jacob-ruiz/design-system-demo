@@ -22,6 +22,6 @@
     "theme-ui": "^0.4.0-alpha.0"
   },
   "devDependencies": {
-    "playroom": "^0.16.1"
+    "playroom": "^0.28.2"
   }
 }
